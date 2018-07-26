@@ -1,7 +1,7 @@
 {
-  "name": "dataset-annotator",
+  "name": "dab",
   "version": "0.9.0",
-  "author": "Oleg Menyaylenko",
+  "author": "TATSIAVI",
   "private": true,
   "scripts": {
     "dev": "nf start",
