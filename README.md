@@ -1,4 +1,4 @@
-# Dataset Annotator
+# DAB
 Tool for annotating image datasets.
 
 Table of Contents
