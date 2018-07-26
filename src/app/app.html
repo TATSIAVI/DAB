@@ -1,0 +1,36 @@
+<ion-menu [content]="masterNav">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Menu</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+            <button ion-item (click)="openSettingsForm()">
+                Settings
+            </button>
+            <button ion-item (click)="readAnnotations()">Load Annotations</button>
+            <button ion-item (click)="openAutoLabelPage()">Auto Labels</button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-split-pane when="(min-width: 1px)" (ionChange)="navProxy.onSplitPaneChanged($event._visible);">
+    <ion-nav style="max-width: 10%!important;" [root]="masterPage" #masterNav></ion-nav>
+    <ion-nav [root]="detailPage" #detailNav main></ion-nav>
+
+
+    <ion-fab padding bottom right>
+        <button ion-fab>
+            <ion-icon name="add"></ion-icon>
+        </button>
+        <ion-fab-list side="top" class="fab-list-active">
+            <button ion-fab color="secondary" (click)="openDir()">
+                <ion-icon name="folder"></ion-icon>
+            </button>
+            <button ion-fab color="secondary" (click)="saveFileDialog()">
+                <ion-icon name="md-download"></ion-icon>
+            </button>
+        </ion-fab-list>
+    </ion-fab>
+
+</ion-split-pane>
