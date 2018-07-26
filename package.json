@@ -1,6 +1,6 @@
 {
   "name": "dataset-annotator",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "author": "Oleg Menyaylenko",
   "private": true,
   "scripts": {
@@ -22,8 +22,8 @@
     "publish": [
       {
         "provider": "github",
-        "owner": "omenyayl",
-        "repo": "dataset-annotator"
+        "owner": "TATSIAVI",
+        "repo": "DAB"
       }
     ],
     "files": [
