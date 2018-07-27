@@ -4,6 +4,7 @@ const globalShortcut = electron.globalShortcut;
 const {autoUpdater} = require("electron-updater");
 const dialog = require('electron').dialog;
 const {ipcMain} = require('electron');
+const path = require('path');
 
 // Module to control application life.
 const {
